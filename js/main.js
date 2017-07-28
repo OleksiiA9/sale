@@ -42,27 +42,53 @@ $(document).ready(function(){
       //zindex тоже что и в css z-index
       zIndex: 1000,
       //респонсив при ширине экрана 768px и 480px//
-     // responsive: [
-   // {
-    //  breakpoint: 768,
-   //   settings: {
-    //    arrows: false,
-    //    centerMode: true,
-    //    centerPadding: '40px',
-    //    slidesToShow: 2,
-    //    slidesToScroll: 2,
-    //  }
-  //  },
-  //  {
-   //   breakpoint: 480,
-   //   settings: {
-   //     arrows: false,
-    //    centerMode: true,
-   //     centerPadding: '40px',
-    //    slidesToShow: 1,
-    //    slidesToScroll: 1,
-   //   }
-  //  }
-//  ]
+responsive: [
+{
+breakpoint: 768,
+settings: {
+arrows: false,
+//centerMode: true,
+//centerPadding: '40px',
+slidesToShow: 2,
+slidesToScroll: 2,
+}
+},
+{
+breakpoint: 640,
+settings: {
+arrows: false,
+//centerMode: true,
+//centerPadding: '40px',
+slidesToShow: 1,
+slidesToScroll: 1,
+}
+}
+]
 });
 });
+    //
+$(document).ready(function(){
+	$('.menu').click(function(){
+		$(this).toggleClass('active');
+		$('.nav_1').toggleClass('active');
+		return false;
+	});
+});
+
+    //up   
+$(document).ready(function(){    
+    $(".arrow .top").hide();
+            $(function () {
+            $(window).scroll(function () {
+        if ($(this).scrollTop() > 80) {
+            $(".arrow .top").css("display","block");}
+        else {
+            $(".arrow .top").css("display","none");}
+    });
+$('.arrow .top').click(function () {
+    $('html, body').animate({
+    scrollTop: $(".header ").offset().top
+    }, 2000);
+    });
+    });
+}); 
