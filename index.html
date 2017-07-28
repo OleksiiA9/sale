@@ -5,7 +5,12 @@
     <title>Ecommerce Website</title>
     <!--icon-->
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
-    <!--<script type="text/javascript" src="js/slick.min.js"></script>-->
+    <link rel="stylesheet" href="css/slick.css" type="text/css"/>
+    <link rel="stylesheet" href="css/slick-theme.css" type="text/css"/>
+    <link rel="stylesheet" href="css/slider.css" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
     <div class="header">
@@ -70,9 +75,12 @@
     <div class="main">
         <div class="wrapper">
             <div class="banner">
-               <div class="gradient1"></div>
+               <div class="gradient1">
+                   <div class="banner_img">
+                       <img src="images/banner.png" alt="#">
+                   </div>
+               </div>
                <div class="gradient2"></div>
-                <img src="images/banner.png" alt="#">
                 <div class="txt">
                     <h3>PRODUCT TITLE</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit lacus dapibus ante mattis in adipiscing nibh placerat. Cras bibendum porta diam, non dignissim sapien malesuada vitae.</p>
@@ -126,66 +134,161 @@
                     </div>
                 </div>
                 <div class="content">
-                    <div class="wrapper">
-                        <div class="sel">
-                            <select>
-                                <option>Ascending</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                            <select>
-                                <option>Product Name</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                            <select>
-                                <option>Brand Name</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
+                    <div class="sel">
+                       <label>Sort by:</label>
+                        <select>
+                            <option>Ascending</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <select>
+                            <option>Product Name</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <select>
+                            <option>Brand Name</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                    <div class="itemsPerPage">
+                        <p>Items per page: <span class="perPage">12</span><span>/</span><span class="perPage">20</span><span>/</span><span class="perPage">30</span><span>/</span><span class="perPage">50</span></p>
+                    </div>
+                    <h2 class="ourP">OUR PRODUCTS</h2>
+                    <div class="Tab">
+                        <ul class="t1">
+                            <li>
+                                <img src="images/layer_49.png" alt="#">
+                                <h5>Product Name</h5>
+                                <p>Price:<span>$12.99</span></p>
+                            </li>
+                            <li>
+                                <img src="images/layer_50.png" alt="#">
+                                <h5>Product Name</h5>
+                                <p>Price:<span>$12.99</span></p>
+                            </li>
+                            <li>
+                                <img src="images/layer_51.png" alt="#">
+                                <h5>Product Name</h5>
+                                <p>Price:<span>$12.99</span></p>
+                            </li>
+                            <li>
+                                <img src="images/layer_52.png" alt="#">
+                                <h5>Product Name</h5>
+                                <p>Price:<span>$12.99</span></p>
+                            </li>
+                            <li>
+                                <img src="images/layer_53.png" alt="#">
+                                <h5>Product Name</h5>
+                                <p>Price:<span>$12.99</span></p>
+                            </li>
+                            <li>
+                                <img src="images/layer_54.png" alt="#">
+                                <h5>Product Name</h5>
+                                <p>Price:<span>$12.99</span></p>
+                            </li>
+                            <li>
+                                <img src="images/layer_55.png" alt="#">
+                                <h5>Product Name</h5>
+                                <p>Price:<span>$12.99</span></p>
+                            </li>
+                            <li>
+                                <img src="images/layer_56.png" alt="#">
+                                <h5>Product Name</h5>
+                                <p>Price:<span>$12.99</span></p>
+                            </li>
+                            <li>
+                                <img src="images/layer_57.png" alt="#">
+                                <h5>Product Name</h5>
+                                <p>Price:<span>$12.99</span></p>
+                            </li>
+                            <li>
+                                <img src="images/layer_58.png" alt="#">
+                                <h5>Product Name</h5>
+                                <p>Price:<span>$12.99</span></p>
+                            </li>
+                            <li>
+                                <img src="images/layer_59.png" alt="#">
+                                <h5>Product Name</h5>
+                                <p>Price:<span>$12.99</span></p>
+                            </li>
+                            <li>
+                                <img src="images/layer_60.png" alt="#">
+                                <h5>Product Name</h5>
+                                <p>Price:<span>$12.99</span></p>
+                            </li>
+                        </ul> 
+                        <ul class="tabs">   
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>Next ></li>
+                            <li>Last >></li>
+                         </ul>
+                    </div>
+                    <h2 class="fp_slide">FEATURED PRODUCTS</h2>
+                    <div class="slider">
+                        <div class="sl">
+                            <div class="sl__slide">
+                                <img src="images/layer_31.png" alt="Картинка слайда 1" class="sl__img" >
+                                <div class="sl__text">
+                                    <h3 class="sl__zag">Elegant MP3 player skin PSD download</h3>
+                                </div>
+                            </div>
+                            <div class="sl__slide">
+                                <img src="images/layer_32.png" alt="Картинка слайда 2" class="sl__img" >
+                                <h3 class="sl__zag">Download shopping bag & icons (PSD & PNG)</h3>
+                            </div>
+                            <div class="sl__slide">
+                                <img src="images/layer_33.png" alt="Картинка слайда 3" class="sl__img" >
+                                <div class="sl__text">
+                                    <h3 class="sl__zag">High resolution abstract bokeh background</h3>
+                                </div>
+                            </div>
+                            <div class="sl__slide">
+                                <img src="images/layer_32.png" alt="Картинка слайда 4" class="sl__img" >
+                                <div class="sl__text">
+                                    <h3 class="sl__zag">Download shopping bag & icons (PSD & PNG)</h3>
+                                </div>
+                            </div>
+                            <div class="sl__slide">
+                                <img src="images/layer_33.png" alt="Картинка слайда 5" class="sl__img" >
+                                <div class="sl__text">
+                                    <h3 class="sl__zag">High resolution abstract bokeh background</h3>
+                                </div>
+                            </div>
+                            <div class="sl__slide">
+                                <img src="images/layer_31.png" alt="Картинка слайда 6" class="sl__img" >
+                                <div class="sl__text">
+                                    <h3 class="sl__zag">Elegant MP3 player skin PSD download</h3>
+                                </div>
+                            </div>
                         </div>
-                        <div class="itemsPerPage">
-                            <p>Items per page: <span>12</span><span>20</span><span>30</span><span>50</span></p>
-                        </div>
-                        <h2>OUR PRODUCTS</h2>
-                        <tabs>
-                            <ul class="product">
-                                <li>
-                                    <img src="images/.png" alt="#">
-                                    <h5>Product Name</h5>
-                                    <p>Price:<span>$12.99</span></p>
-                                </li>
-                            </ul>
-                            <ul class="page">
-                                <li>1</li>
-                                <li>2<li>
-                                <li>3</li>
-                                <li>4</li>
-                                <li>5</li>
-                                <li>Next ></li>
-                                <li>Last >></li>
-                            </ul>
-                        </tabs>
-                        <h2>FEATURED PRODUCTS</h2>
-                        <slider>
-                            
-                        </slider>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        <div class="wrapper">
-            <div class="top_footer">
-                <div class="secured"></div>
-                <div class="mail"></div>
+        <div class="top_footer">
+            <div class="wrapper">
+                <div class="secured">
+                    <p>Shop online with us safely & securely</p>
+                </div>
+                <div class="mail">
+                    <p>We ship your orders anywhere!</p>
+                </div>
                 <form>
                     <input type="text" placeholder="Search website">
                     <input type="button" value="GO">
                 </form>
-            </div>
-            <div class="bot_footer">
+            </div>    
+        </div>
+        <div class="bot_footer">
+            <div class="wrapper">   
                 <ul class="company">
                     <li>Company</li>
                     <li><a href="#">Home</a></li>
@@ -195,7 +298,7 @@
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Join Us</a></li>
                 </ul>
-                <ul class="categories">
+                <ul class="categories2">
                     <li>Categories</li>
                     <li><a href="#">Lorem ipsum dolor sit</a></li>
                     <li><a href="#">Amet consectetur</a></li>
@@ -225,7 +328,7 @@
                     <li>Phone:<a href="#">1.234.567.8901</a></li>
                     <li>Toll-Free:<a href="#">1.234.567.8901</a></li>
                     <li>Fax:<a href="#">1.234.567.8901</a></li>
-                    <li>Email:<a href="#">Send us an email</a></li>
+                    <li>Email:<a href="#"><span>Send us an email</span></a></li>
                 </ul>
                 <div class="time">
                     <span>MON - SAT 	9am to 7:30pm</span>
