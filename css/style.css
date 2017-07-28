@@ -879,7 +879,7 @@ border-bottom: 1px solid #cdcdc8;
     margin-bottom: 28px;
 }
 /*************************************************************/
-@media screen and (min-width: 400px) and (max-width: 1000px) {
+@media screen and (min-width: 400px) and (max-width: 999px) {
     .wrapper{
         width: 100%;
     }
@@ -1002,12 +1002,11 @@ border-bottom: 1px solid #cdcdc8;
         padding: 10px 0;
     }
     .main .sidebar{
-        width: 90%;
+        width: 40%;
         padding: 0 5%;
-        background: #d9d7d2;
     }
     .main .sidebar .categories{
-        width: 50%;
+        width: 100%;
         margin-top: 58px;
     }
     .main .sidebar .categories li{
@@ -1021,7 +1020,7 @@ border-bottom: 1px solid #cdcdc8;
         text-align: center;
     }
     .main .sidebar .categories li a{
-        margin-left: 20p;
+        margin-left: 20px;
     }
     .main .sidebar .socialNetwork{
         display: none;
@@ -1031,17 +1030,13 @@ border-bottom: 1px solid #cdcdc8;
     }
     .content{
         display: block;
-        width: 100%;
+        width: 44%;
+        margin-right: 6%;
     }
     .content .sel{
         width: 100%;
+        margin-top: 63px;
         flex-wrap: wrap;
-        background: rgb(221, 117, 121);
-        background: -moz-linear-gradient(90deg, rgb(221, 117, 121) 43%, rgb(204, 42, 39) 60%);
-        background: -webkit-linear-gradient(90deg, rgb(221, 117, 121) 43%, rgb(204, 42, 39) 60%);
-        background: -o-linear-gradient(90deg, rgb(221, 117, 121) 43%, rgb(204, 42, 39) 60%);
-        background: -ms-linear-gradient(90deg, rgb(221, 117, 121) 43%, rgb(204, 42, 39) 60%);
-        background: linear-gradient(180deg, rgb(221, 117, 121) 43%, rgb(204, 42, 39) 60%);
         padding-bottom: 4px;
     }
     .sel{
@@ -1052,9 +1047,7 @@ border-bottom: 1px solid #cdcdc8;
     .content label{
         display: block;
     }
-    .content .sel select:last-child{
-        margin-top: 10px;
-    }
+    
     .content .itemsPerPage{
         display: none;
     }
@@ -1247,7 +1240,7 @@ border-bottom: 1px solid #cdcdc8;
         text-align: center;
     }
     .main .sidebar .categories li a{
-        margin-left: 20p;
+        margin-left: 20px;
     }
     .main .sidebar .socialNetwork{
         display: none;

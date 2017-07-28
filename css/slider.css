@@ -40,6 +40,27 @@ a{
     padding-top: 10px;
     color: #b20e00;
 }
+
+/*************************************************************/
+@media screen and (min-width: 400px) and (max-width: 999px) {
+    .sl__slide{
+        opacity: 1;
+        padding: 0;
+    }
+    .sl__slide img{
+        width: 100%;
+    }
+    .sl__zag{
+        margin: 0 auto;
+        padding: 0 10px;
+        font-family: ;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 10px;
+        color: #b20e00;
+    }
+}
 /*Адаптивность картинок и видео*/
 img{
   max-width: 100%;

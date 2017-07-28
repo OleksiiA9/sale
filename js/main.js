@@ -44,7 +44,7 @@ $(document).ready(function(){
       //респонсив при ширине экрана 768px и 480px//
 responsive: [
 {
-breakpoint: 768,
+breakpoint: 1000,
 settings: {
 arrows: false,
 //centerMode: true,
