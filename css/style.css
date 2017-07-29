@@ -878,6 +878,22 @@ border-bottom: 1px solid #cdcdc8;
     color: #fff;
     margin-bottom: 28px;
 }
+.arrow{
+    display: block;
+    width: 57px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;  
+}
+.arrow .top{display: block;}
+.arrow .top span{
+    display: block;
+    opacity: 0.3;
+}
+.arrow .top span:hover{
+    display: block;
+    opacity: 1;
+}
 /*************************************************************/
 @media screen and (min-width: 400px) and (max-width: 999px) {
     .wrapper{
